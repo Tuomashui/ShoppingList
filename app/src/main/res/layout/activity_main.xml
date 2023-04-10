@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#488BFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/showGroceries"
+        android:layout_width="148dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="124dp"
+        android:onClick="showgroceries"
+        android:text="Näytä ostoslista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addgrocery"
+        android:layout_width="94dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="124dp"
+        android:onClick="addgrocery"
+        android:text="Lisää ostos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemMain"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reminderMain"
+        android:layout_width="238dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Muistutus:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/alphabet"
+        android:layout_width="224dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="4dp"
+        android:onClick="toAlphabet"
+        android:text="Järjestä aakkosjärjestykseen"
+        app:layout_constraintBottom_toTopOf="@+id/showGroceries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timeorder"
+        android:layout_width="174dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="toTime"
+        android:text="Järjestä aikajärjestykseen"
+        app:layout_constraintEnd_toStartOf="@+id/alphabet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
